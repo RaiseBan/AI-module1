@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#hasAbility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#hasAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#hasClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#hasClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Classs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#isCounterPickOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#isCounterPickOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#isCounteredBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#isCounteredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#isCounteredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Classs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Classs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#CounterPick -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#CounterPick"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Classs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#AntiMage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#AntiMage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Blink"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Carry"/>
+        <untitled-ontology-11:isCounterPickOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Lion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Blink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Blink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Carry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Carry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Clinkz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Clinkz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Invisibility"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Carry"/>
+        <untitled-ontology-11:isCounterPickOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#DrowRanger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#DrowRanger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#DrowRanger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Multishot"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Carry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#FingerOfDeath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#FingerOfDeath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Initiator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Initiator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Classs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Invisibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Invisibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Lion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Lion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#FingerOfDeath"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Intelligence"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Support"/>
+        <untitled-ontology-11:isCounterPickOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Pudge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Multishot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Multishot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Pounce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Pounce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Pudge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Pudge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hook"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Strength"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Tank"/>
+        <untitled-ontology-11:isCounterPickOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#DrowRanger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Shrapnel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Shrapnel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Slark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Slark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Pounce"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Initiator"/>
+        <untitled-ontology-11:isCounterPickOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Lion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Sniper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Sniper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Hero"/>
+        <untitled-ontology-11:hasAbility rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Shrapnel"/>
+        <untitled-ontology-11:hasClass rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Agility"/>
+        <untitled-ontology-11:hasRole rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Strength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Strength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Classs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Support -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Support">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Tank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Tank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#Role"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
