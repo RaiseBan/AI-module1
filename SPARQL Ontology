@@ -1,0 +1,83 @@
+hero(AntiMage).
+
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+SELECT ?hero
+WHERE {
+  ?hero rdf:type ontology:Hero .
+  FILTER (?hero = ontology:AntiMage)
+}
+
+
+-----
+
+same_class(sniper, Who).
+
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+SELECT ?hero
+WHERE {
+  ?hero ontology:hasClass ?class .
+  ontology:Sniper ontology:hasClass ?class .
+  FILTER(?hero != ontology:Sniper)
+}
+
+
+-----
+
+hero(Who), \+ is_counter_pick(Who, slark), Who \= slark.
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+
+SELECT ?hero
+WHERE {
+  ?hero rdf:type ontology:Hero .               # Указываем, что ?hero — это экземпляр класса Hero
+  FILTER NOT EXISTS { ontology:Slark ontology:isCounterPickOf ?hero }  # Условие, что Slark контрит ?hero
+  FILTER(?hero != ontology:Slark)              # Исключаем самого Slark из результатов
+}
+
+-----
+
+can_use_ability(Who, invisibility).
+
+
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+SELECT ?hero
+WHERE {
+  ?hero ontology:hasAbility ontology:Invisibility .
+}
+
+
+-----
+
+is_agility(Who).
+
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+SELECT ?hero
+WHERE {
+  ?hero ontology:hasClass ontology:Agility .
+}
+
+-----
+
+is_counter_pick(lion, Who).
+
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+SELECT ?hero
+WHERE {
+  ?hero ontology:isCounterPickOf ontology:Lion .
+}
+
+-----
+
+is_carry(Who).
+
+PREFIX ontology: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-11#>
+SELECT ?hero
+WHERE {
+  ?hero ontology:hasRole ontology:Carry .
+}
+
+
+
+
